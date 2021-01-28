@@ -8,5 +8,5 @@ export const setAlert = (msg, alertType, timeout = 5000) => dispatch => {
     payload: { msg, alertType, id }
   });
 
-  setTimeout(() => dispatch({ type: REMOVE_ALERT, payload: id }), timeout); //after 5 seconds trigger remove alert
+  setTimeout(() => dispatch({ type: REMOVE_ALERT, payload: id }), timeout);
 };
